@@ -1,0 +1,277 @@
+/*esto es para menu principal*/
+body { 
+	
+font-family: 'Aboreto', cursive;
+margin: 0;
+padding: 0;
+
+}
+
+li{  
+	list-style: none;
+	margin-right: 25px;
+	color: white;
+	
+}
+
+.menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.lista{
+	display: flex;
+	font-size: 20px;
+	color: black;
+	
+}
+
+ /*parrafo*/
+
+p{                  
+	font-size: 20px;            
+
+	color: black;
+	
+}
+
+/*esto es para titular*/
+
+a{
+	text-decoration: none;
+	
+}
+
+.titular a, #sobremi a,#blog a{
+	color: white;
+	background: #5AC9F9;
+	padding:13px;
+	text-decoration: none;
+}
+
+.titular{
+	
+    text-align: center;
+    margin-top: 200px;
+}
+
+h2{
+	margin-bottom: 40px;
+	font-size: 30px;
+}
+h1{
+	font-size: 50px;
+	
+
+}
+header{
+	height: 100vh;
+	background:url(fondocivil.jpg);
+	background-size: cover; 
+}
+.contenedor-cabezera{
+	max-width: 1280px;
+	width: 90%;
+	margin: auto;
+}
+
+/* esta parte corresponde a sobre mi */
+
+h3{
+	text-align: center;
+	font-size: 55px;
+
+}
+
+.contenedor-sobremi{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	
+}
+.parrafo-boton{
+	width: 45%;
+}
+.parrafo-boton p{
+	font-size: 25px;
+
+}
+.parrafo-boton a{
+	margin-top: 20px;
+	display: inline-block;   /*displey inline block es para que se coloque en linea uno debajo del otro*/
+
+}
+/*esta pàrte corresponde a servicios*/
+
+
+.contenedor-servicios{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	
+}
+.servicios{
+	width: 25%;
+	padding: 30px;
+	margin-bottom: 40px;
+	border-radius: 20px;
+	color: #FF9933;		;
+	
+
+}
+.naranja{
+	background: #FF9933;
+
+}
+.azul{
+background:#3368FF ;	
+}
+.servicios h4{
+	font-size: 30px;
+	color: #ffff;
+}
+
+.servicios p{
+	font-size: 25px;
+	color: #ffff;
+}
+.servicios img{
+	float: right;
+}
+
+.contenedor-sobremi p{
+	justify-content: space-between;
+	color: black;
+}
+
+/*esta pàrte corresponde a blog*/
+
+.contenedor-publicaciones {
+	display: flex;
+	justify-content: space-around;
+}
+
+.publicaciones {
+	width: 25%;
+	padding: 30px;
+	margin-bottom: 40px;
+	border-radius: 20px;
+	color: black;
+	background:`red ;
+	box-shadow: 10px 12px 20px;
+}
+
+#blog{
+	
+	background: #6692B3 ;
+	padding-top: 50PX;
+
+
+ }
+
+span{
+	font-size: 80px;
+	color: #FF9933;
+}
+.owl-nav{
+	text-align: center;
+}
+
+#whatsapp a{
+	background: none;
+	position: fixed;
+	top: 85%;
+	right: 15px;
+}
+#facebook a{
+	background: none;
+	position: fixed;
+	top: 74%;
+	right: 15px;
+
+}
+
+.menu-icono{
+	display: none;
+}
+
+	
+/* esta parte corresponde a diseño responsive */
+
+@media (max-width:480px){
+
+	header{
+		height: 100vh;
+	}
+
+    nav{
+    	position: absolute;
+    	top: 50px;
+    	left: 0px;
+    	background: #FF9933;
+    	width: 100%;
+    }
+    nav .lista{
+    	flex-direction: column;
+    	display: flex;
+    }
+
+
+    .menu-icono{
+    	display: block;
+    	width: 25px;
+    }
+    h1{
+        font-size: 30px; 
+
+    }
+
+    h2{
+    	font-size:25px ;
+    	color: white;
+
+    }
+  
+
+   .titular{
+   	margin-top: 200px;       /* LE PUSE 200PX*/
+
+   }
+      
+	
+.contenedor-sobremi{
+	flex-direction: column;
+	
+
+}
+
+.parrafo-boton{
+	width: 90%;
+}
+.contenedor-servicios{
+	flex-direction: column;
+}
+
+.servicios{
+	width: 70%;
+	margin: auto;
+	margin-bottom: 15%;
+
+}
+
+.contenedor-publicaciones{
+	flex-direction: column;
+}
+
+.publicaciones{
+	width: 90%;
+	margin: auto;
+	margin-bottom: 25%;
+}
+
+@media (max-width:850px){
+
+
+}
